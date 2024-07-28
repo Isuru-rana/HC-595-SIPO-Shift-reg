@@ -42,7 +42,7 @@ void setRegisterPin(int index, int value) {
 }
 
 void loop() {
-  for (int i = 0; i < 8; i++) {
+  for (int i = 0; i < numOfRegisterPins; i++) {
     setRegisterPin(i, HIGH);
     writeRegisters();
     delay(100);
